@@ -357,11 +357,14 @@ display: none;
 </div>
 
 
-<p>Exercise 1</p>
+<div id="exercise-1" class="section level1">
+<h1>Exercise 1</h1>
 <pre class="r"><code>a&lt;- sum(2000:20000)
 a</code></pre>
 <pre><code>## [1] 198011000</code></pre>
-<p>Exercise 2</p>
+</div>
+<div id="exercise-2" class="section level1">
+<h1>Exercise 2</h1>
 <pre class="r"><code>a &lt;- 5
 b &lt;- 2:20
 a
@@ -370,7 +373,9 @@ b</code></pre>
 ##  [1]  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20</code></pre>
 <p>This code assigned the integer value 5 to the object a and the array
 of integers from 2 to 20 to the object b.</p>
-<p>Exercise 3</p>
+</div>
+<div id="exercise-3" class="section level1">
+<h1>Exercise 3</h1>
 <pre class="r"><code>d &lt;- &quot;I just want to be deleted&quot;
 d
 ls() 
@@ -390,15 +395,21 @@ cc</code></pre>
 ## [1] 214</code></pre>
 <p>These are different results. sum adds the values associated with the
 objects, + adds the value of a to each integer in the array of b</p>
-<p>Exercise 4</p>
+</div>
+<div id="exercise-4" class="section level1">
+<h1>Exercise 4</h1>
 <pre class="r"><code>sum4=sum(b[5:11])
 sum4</code></pre>
 <pre><code>## [1] 63</code></pre>
-<p>Exercise 5</p>
+</div>
+<div id="exercise-5" class="section level1">
+<h1>Exercise 5</h1>
 <pre class="r"><code>sum5=sum(b[c(3,8,10)])
 sum5</code></pre>
 <pre><code>## [1] 24</code></pre>
-<p>Exercise 6</p>
+</div>
+<div id="exercise-6" class="section level1">
+<h1>Exercise 6</h1>
 <pre class="r"><code>m &lt;- matrix(data=1:25,ncol=5,byrow=T)
 m
 m[5,5]</code></pre>
@@ -411,6 +422,31 @@ m[5,5]</code></pre>
 ## [1] 25</code></pre>
 <p>The first number is for the row, the second number is for the column.
 m[3,] selects all the data in the 3rd row.</p>
+</div>
+<div id="exercise-7" class="section level1">
+<h1>Exercise 7</h1>
+<pre class="r"><code>cbind(m,101:105)
+
+n&lt;-matrix(data=1:5, ncol=5, byrow = T)
+n&lt;- rbind(n, m)
+n</code></pre>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5] [,6]
+## [1,]    1    2    3    4    5  101
+## [2,]    6    7    8    9   10  102
+## [3,]   11   12   13   14   15  103
+## [4,]   16   17   18   19   20  104
+## [5,]   21   22   23   24   25  105
+##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    2    3    4    5
+## [2,]    1    2    3    4    5
+## [3,]    6    7    8    9   10
+## [4,]   11   12   13   14   15
+## [5,]   16   17   18   19   20
+## [6,]   21   22   23   24   25</code></pre>
+<p>cbind creates a new column in the object m with the integers 101
+though 105 in the subsequent rows of the column. rbind adds a new
+row.</p>
+</div>
 
 
 
