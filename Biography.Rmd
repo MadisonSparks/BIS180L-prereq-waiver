@@ -1,0 +1,35 @@
+---
+title: "Biography"
+author: "Madison Sparks"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Madison Sparks
+
+**Quantitative Biology**
+
+*Senior*
+
+2020-2024
+
+
+| Year | University | Acronym |
+|:------:|:-----------:|:----------:|
+| 2020-21 | University of California- Davis | UCD |
+| 2021-22 | University of California- Davis | UCD |
+| 2022-23 | University College London | UCL |
+
+
+Classes taken at UCL
+
+[UCL](https://www.ucl.ac.uk/)
+
+* Advanced Computaional Biology
+* Machine Learning in the Biosciences
+* Metabolism
+* Advanced Human Genetics
