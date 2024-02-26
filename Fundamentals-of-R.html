@@ -370,6 +370,26 @@ b</code></pre>
 ##  [1]  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20</code></pre>
 <p>This code assigned the integer value 5 to the object a and the array
 of integers from 2 to 20 to the object b.</p>
+<p>Exercise 3</p>
+<pre class="r"><code>d &lt;- &quot;I just want to be deleted&quot;
+d
+ls() 
+rm(d)
+ls()
+d #error bc removed </code></pre>
+<pre><code>## Error in eval(expr, envir, enclos): object &#39;d&#39; not found</code></pre>
+<pre><code>## [1] &quot;I just want to be deleted&quot;
+## [1] &quot;a&quot; &quot;b&quot; &quot;d&quot;
+## [1] &quot;a&quot; &quot;b&quot;</code></pre>
+<pre class="r"><code>c&lt;- a + b
+cc &lt;- sum(a,b)
+
+c
+cc</code></pre>
+<pre><code>##  [1]  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+## [1] 214</code></pre>
+<p>These are different results. sum adds the values associated with the
+objects, + adds the value of a to each integer in the array of b</p>
 
 
 

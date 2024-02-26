@@ -25,3 +25,25 @@ b
 ```
 
 This code assigned the integer value 5 to the object a and the array of integers from 2 to 20 to the object b.
+
+Exercise 3
+```{r, results='hold', error=TRUE}
+d <- "I just want to be deleted"
+d
+ls() 
+rm(d)
+ls()
+d #error bc removed 
+```
+```{r, results='hold'}
+c<- a + b
+cc <- sum(a,b)
+
+c
+cc
+
+```
+These are different results. sum adds the values associated with the objects, + adds the value of a to each integer in the array of b
+
+
+
