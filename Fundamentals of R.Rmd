@@ -45,5 +45,12 @@ cc
 ```
 These are different results. sum adds the values associated with the objects, + adds the value of a to each integer in the array of b
 
+Exercise 4
+```{r, results='hold'}
+
+sum4=sum(b[5:11])
+sum4
+```
+
 
 
