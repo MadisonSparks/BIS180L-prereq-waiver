@@ -55,7 +55,18 @@ sum4
 Exercise 5
 ```{r, results='hold'}
 
-sum5=sum(b[3],b[8],b[10])
+sum5=sum(b[c(3,8,10)])
 sum5
 ```
+
+Exercise 6
+```{r, results='hold'}
+m <- matrix(data=1:25,ncol=5,byrow=T)
+m
+m[5,5]
+```
+The first number is for the row, the second number is for the column. m[3,] selects all the data in the 3rd row.
+
+
+
 
