@@ -15,3 +15,13 @@ a<- sum(2000:20000)
 a
 
 ```
+Exercise 2
+
+```{r, results='hold'}
+a <- 5
+b <- 2:20
+a
+b
+```
+
+This code assigned the integer value 5 to the object a and the array of integers from 2 to 20 to the object b.
