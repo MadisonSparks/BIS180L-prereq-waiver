@@ -52,5 +52,10 @@ sum4=sum(b[5:11])
 sum4
 ```
 
+Exercise 5
+```{r, results='hold'}
 
+sum5=sum(b[3],b[8],b[10])
+sum5
+```
 
