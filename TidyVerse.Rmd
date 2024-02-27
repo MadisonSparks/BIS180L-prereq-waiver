@@ -1,0 +1,35 @@
+---
+title: "TidyVerse"
+author: "Madison Sparks"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r results='hold', message=FALSE}
+# load library nad csv file
+library(tidyverse)
+height<- read_csv("height_data_clean.csv")
+head(height)
+
+```
+
+```{r results='hold'}
+# select only jan 27 2023 data 
+jan<- filter(height,survey_date == "2023-01-27")
+head(jan)
+```
+
+```{r results='hold'}
+# group by pop and find mean height for each
+jan%>%
+  group_by(pop)%>%
+  summarise(ht.mean=mean(height_cm), n= n())
+
+
+```
