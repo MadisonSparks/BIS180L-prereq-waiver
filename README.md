@@ -2,6 +2,5 @@
 Madison Sparks
 
 Prerequisite testing for R knowledge 
-fundamentals 
-ggplot
-tidyverse
+
+fundamentals, ggplot, tidyverse
